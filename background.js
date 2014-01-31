@@ -23,10 +23,18 @@ function refreshGawker(){
 	chrome.tabs.query({},function(tab){
 
 						for (var i=0;i<tab.length;i++){
-							
-								if (tab[i].url.indexOf('gawker') > -1){		
+
+							function urls(website) {
+								return tab[i].url.indexOf(website);
+							}
+
+							kinja = ['gawker','lifehacker','deadspin','gizmodo','io9','jezebel','jalopnik','kotaku','sploid','playboysfw']
+
+							for (var j=0;j<kinja.length;j++){
+								if (urls(kinja[j]) > -1){		
 								chrome.tabs.reload(tab[i].id);
-							
+							}
+	
 							}
 						}		
 				});
