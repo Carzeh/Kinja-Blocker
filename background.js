@@ -16,7 +16,7 @@ if (blocked.length<1){
 	});
 } 
 
-yes
+
 // Refresh any tabs that are open at gawker.com
 
 function refreshGawker(){
