@@ -21,7 +21,8 @@
    "content_scripts": [
     {
       "js": ["jquery.js","content.js"],
-      "matches": [ "http://gawker.com/*"]
+      "matches": [ "http://*/*"]
     }
   ]
+
 }
