@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gawker Filter</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="background.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+
+<style type="text/css">
+
+body {
+  font-family:helvetica;
+  width:200px;
+  height:auto; 
+  display: block;
+  border-radius:5px;
+}
+#title {
+  font-weight:bold;
+  font-size:14px;
+  color:white;
+  padding:8px;
+  display:block;  
+  background-color:#423F40;
+  border-bottom:1px solid #ccc;
+  text-align:center;
+
+}  
+#outercontainer { 
+  border:2px solid black;
+  box-shadow: 2px 2px 3px #888888;
+
+}
+label {
+  font-size:12px; 
+  font-weight:bold;
+}
+#blockedList {
+  color:black;
+  font-size:0.9em;
+  padding:10px;
+  border:1px solid white;
+  background-color:#ccc;
+  
+}
+#blockedListcontainer {
+  padding:10px;
+  padding-top:0px;
+  background-color:#ccc;
+}
+#blockedListMsg {
+  color:black;
+  font-size:0.9em;
+  padding:10px;
+  background-color:#ccc;
+}
+input {
+  margin-left:2px;
+  
+}
+#author {
+  width:95%;
+}
+#inputs {
+  background-color:#ccc;
+  padding:10px;   
+}
+
+#kill { 
+  color:black; 
+}
+
+#emptylist {
+  background-color:#ccc;
+  padding-left:8px;
+  padding-bottom:5px;
+}
+.authorAnchor {
+  padding:2px;
+}
+#break {
+  margin-top:5px;
+  margin-left:4px;
+  width:95%;
+  border-bottom:1px solid black;
+  background-color:gray;
+}
+</style> 
+</head>
+<body>
+    <div id="outercontainer">
+    <div id="title">Gawker Blocker</div>
+    <div id="inputs">
+    <label>Block Gawker authors by name (click name to remove)</label>
+    <input type="text" id="author" />
+    <div id="error"></div>
+    <div id="break"></div>
+    </div>
+    <div id="blockedListcontainer"><div id="blockedList"></div></div>
+    <div id="emptylist"><input type="button" id="kill" value="Clear All" /></div>
+    
+    </div>
+</body>
+</html>
