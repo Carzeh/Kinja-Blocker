@@ -1,0 +1,25 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "jquery.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "gawker.png",
+      "default_popup": "popup.html",
+      "default_title": "Kinja Blocker"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "content.js" ],
+      "matches": [ "http://*/*" ]
+   } ],
+   "description": "Filter out authors on any Kinja Blog (Gawker, Lifehacker, Deadspin, Jezebel etc.)",
+   "icons": {
+      "128": "gawker.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgx91rDDhgdbv7GzWR6tDaPIsXdFyEZj2MHM7Inpyey7r7gFpjSmhFUHd9dUFUZzwrcZaXIKYYvlufPADOimMp40HwoZMD5EerdcSA5OvIPsY6iJhUXIx3aBpmoY7fvbcozmDmC0hbjPFmK8DODHCPfaH6uN0DYUxZjNbCaT7stfzPCMwOLA3YrLnwhuqqjyxz1sIoqEcSJpnO5L3xkB5nFK6jRBcXj1zIwiEjkL2Cv33miHJLHYxxytTV4O4oX9KTVEALk+YWqtB+3Pn3uGiuD6BC2CTkYMdqhRgyL2nCGFP8WAxbfVgktO9gVqdXahPG+D2iWsIbFQLKNsOgSJxKQIDAQAB",
+   "manifest_version": 2,
+   "name": "Kinja Blocker",
+   "permissions": [ "activeTab", "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0"
+}
