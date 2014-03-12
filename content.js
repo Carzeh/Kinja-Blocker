@@ -23,6 +23,15 @@ function Filtering(person){
 		}
 	});
 
+	// Check for "Tiger" - the new Kinja platform
+
+	// if ($(body.f_tiger_on).parent('html')) {
+		
+	// 	console.log('test');
+	// }
+
+	// else {
+
 	// Filters input for "old" pre-Tiger pages
 	$("a:containsNC('" + person + "')").closest('.post-wrapper.js_post-wrapper').remove();
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
