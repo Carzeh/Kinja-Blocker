@@ -24,22 +24,14 @@ function Filtering(person){
 		}
 	});
 
-	// Check for "Tiger" - the new Kinja platform
-
-	// if ($(body.f_tiger_on).parent('html')) {
-		
-	// 	console.log('test');
-	// }
-
-	// else {
-
-	
-	// Filters input for "old" pre-Tiger pages
+	// Filters input for "Tiger" - the new Kinja platform
 	$("a:containsNC('" + person + "')").closest('.post-wrapper.js_post-wrapper').remove();
+
+	// Filters input for "old" pre-Tiger pages
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
 	$( ".text-upper:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.postlist-dense').remove(); 
-	// }
+	
 };
 
 
