@@ -33,7 +33,7 @@ function Filtering(person){
 
 	// else {
 
-	// Test Git
+	
 	// Filters input for "old" pre-Tiger pages
 	$("a:containsNC('" + person + "')").closest('.post-wrapper.js_post-wrapper').remove();
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
