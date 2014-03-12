@@ -31,7 +31,7 @@ function Filtering(person){
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
 	$( ".text-upper:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.postlist-dense').remove(); 
-	
+	//
 };
 
 
