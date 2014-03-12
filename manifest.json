@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
    "background": {
       "persistent": false,
       "scripts": [ "jquery.js", "background.js" ]
@@ -23,32 +22,4 @@
    "permissions": [ "activeTab", "storage", "tabs" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "3.0"
-=======
-  "name": "Gawker Blocker",
-  "description": "Filter out authors on Gawker homepage",
-  "version": "2.0",
-  "permissions": [
-    "activeTab","storage","tabs"
-  ],
-  "background": {
-    "scripts": ["jquery.js","background.js"],
-    "persistent": false
-  },
-  "icons": {
-      "128": "gawker.png"
-   },
-  "browser_action": {
-    "default_title": "Gawker Blocker",
-    "default_icon": "gawker.png",
-    "default_popup": "popup.html"
-  },
-  "manifest_version": 2,
-   "content_scripts": [
-    {
-      "js": ["jquery.js","content.js"],
-      "matches": [ "http://*/*"]
-    }
-  ]
-
->>>>>>> f0fc7c2cc635946f7e89bd11439dd7aba4dba886
 }
