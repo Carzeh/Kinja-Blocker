@@ -26,6 +26,7 @@ function Filtering(person){
 
 	// Filters input for "new" Tiger pages
 	$("a:containsNC('" + person + "')").closest('.post-wrapper.js_post-wrapper').remove();
+	$("div:containsNC('" + person + "')").closest('.post-wrapper.js_post-wrapper').remove();
 	
 	// Filters input for "old" pre-Tiger pages
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.wide.postlist-dense').remove();
@@ -33,7 +34,6 @@ function Filtering(person){
 	$( "a:containsNC('" + person + "')" ).closest('.post-wrapper.js_post-wrapper.postlist-dense').remove(); 
 	
 };
-
 
 chrome.runtime.onMessage.addListener(function(msg,sender){
 	if (msg.filter == "Send New Blocked List"){
